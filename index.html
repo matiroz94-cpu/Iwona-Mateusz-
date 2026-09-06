@@ -1,15 +1,141 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Iwona ❤️ Mateusz</title>
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#16030d">
+<meta name="description" content="Iwona ❤️ Mateusz — jedna stacja, 220 km i historia, która zaczęła się 14.02.2025.">
+<title>Iwona ❤️ Mateusz — Nasza historia</title>
 <style>
-body{margin:0;background:#14030c;color:#fff;font-family:Arial,sans-serif}main{max-width:850px;margin:auto;padding:25px}section{background:#ffffff10;border:1px solid #ff5b9b55;border-radius:25px;padding:25px;margin:18px 0}h1{color:#ff6fa9;font-size:55px;text-align:center}h2{color:#ff9bc1}p{font-size:19px;line-height:1.6}.quote{text-align:center;font-size:27px;font-weight:bold}.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}img{max-width:100%;border-radius:20px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{padding:18px;text-align:center;background:#ff2d7818;border-radius:18px}.stat b{display:block;font-size:30px;color:#ff78ad}a{display:inline-block;background:#e91e63;color:white;padding:14px 22px;border-radius:30px;text-decoration:none;font-weight:bold}.qr{text-align:center}.qr img{width:330px;background:white;padding:12px}</style></head>
-<body><main>
-<h1>Iwona ❤️ Mateusz</h1>
-<section><div class="quote">„Jedna stacja 220 km… i świat już nie był taki sam.”</div><p style="text-align:center">14.02.2025 ❤️</p></section>
-<section><h2>Nasza historia 💕</h2><p>Czasem jedna chwila wystarczy, żeby świat zmienił się na zawsze. Jedna stacja, 220 km i dwoje ludzi, którzy odnaleźli siebie. Od 14 lutego 2025 roku każda wspólna chwila stała się częścią naszej historii.</p><p>Najpiękniejszym rozdziałem jest nasza córka <b>Lilianna</b>, urodzona 25.02.2026. ❤️</p></section>
-<section><h2>Nasze zdjęcia 📸</h2><div class="photos"><img src="zdjecie1.jpg"><img src="zdjecie2.png"></div></section>
-<section><h2>Nasza miłość w liczbach ⏳</h2><div class="stats">
-<div class="stat"><b>569</b>dni</div><div class="stat"><b>13 670</b>godzin</div>
-<div class="stat"><b>820 220</b>minut</div><div class="stat"><b>49 213 200</b>sekund</div></div></section>
-<section style="text-align:center"><h2>Nasza piosenka 🎵</h2><p>„Kamień – Love”</p><a href="https://youtu.be/vBj5P71Mci4?is=s4fcy7StEcRyUYos" target="_blank">▶ Otwórz piosenkę</a></section>
-<section class="qr"><h2>❤️ Zeskanuj mnie ❤️</h2><p>Zeskanuj kod, aby otworzyć tę historię.</p><img src="kod-qr.png"></section>
-<section><div class="quote">Ty i ja… ❤️ na zawsze ❤️</div></section>
-</main></body></html>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at top,#4b0e2b 0,#220612 38%,#100208 100%);color:#fff;font-family:Arial,Helvetica,sans-serif;line-height:1.7}
+body:before{content:"❤";position:fixed;top:7%;left:4%;font-size:90px;opacity:.035;pointer-events:none}
+body:after{content:"❤";position:fixed;bottom:5%;right:4%;font-size:120px;opacity:.035;pointer-events:none}
+main{max-width:920px;margin:auto;padding:18px}
+.hero{min-height:72vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:45px 12px}
+.heart{font-size:38px;margin-bottom:8px}
+h1{margin:0;color:#ff8fbd;font-size:clamp(42px,11vw,78px);line-height:1.05;text-shadow:0 5px 25px #0008}
+.hero .lead{max-width:720px;font-size:clamp(22px,5vw,34px);font-weight:700;margin:25px 0 12px}
+.date{font-size:22px;color:#ffc4dc;font-weight:bold}
+.scroll{margin-top:35px;color:#ff9fc6;font-size:14px;letter-spacing:2px}
+section{background:#ffffff0d;border:1px solid #ff6fa944;border-radius:28px;padding:28px;margin:20px 0;box-shadow:0 14px 45px #0005;backdrop-filter:blur(4px)}
+h2{margin-top:0;color:#ff9fc6;font-size:clamp(25px,6vw,38px);line-height:1.2}
+p{font-size:18px;margin:12px 0}
+.quote{text-align:center;font-size:clamp(23px,5vw,31px);font-weight:700;color:#ffd2e3;line-height:1.45;margin:10px 0}
+.highlight{color:#ff9fc6;font-weight:bold}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+.stat{padding:18px 12px;text-align:center;background:#ff2d7818;border:1px solid #ff7eaf33;border-radius:20px}
+.stat b{display:block;font-size:31px;color:#ff8fbd;line-height:1.2;margin-bottom:5px}
+.timeline{border-left:2px solid #ff78ad66;margin:20px 0 0 8px;padding-left:22px}
+.point{position:relative;margin:0 0 24px}
+.point:before{content:"❤";position:absolute;left:-39px;top:0;color:#ff79ad;background:#260814;border-radius:50%;padding:2px 5px;font-size:13px}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.photos figure{margin:0}
+.photos img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid #ff79ad44;box-shadow:0 10px 30px #0007}
+figcaption{text-align:center;color:#ffc1d9;font-size:14px;margin-top:7px}
+.center{text-align:center}
+.button{display:inline-block;margin-top:8px;background:linear-gradient(135deg,#e91e63,#ff6f9f);color:white;padding:14px 24px;border-radius:999px;text-decoration:none;font-weight:bold;box-shadow:0 8px 24px #e91e6355}
+.button:hover{transform:translateY(-1px)}
+.qr{text-align:center}
+.qr img{width:min(330px,85vw);background:#fff;padding:12px;border-radius:20px;margin:10px auto 5px;display:block}
+.small{font-size:14px;color:#dcb8c7}
+.final{padding:50px 20px;text-align:center;background:linear-gradient(180deg,#ffffff0d,#ff2d7812)}
+.final .big{font-size:clamp(30px,8vw,52px);font-weight:800;color:#ff9fc6;line-height:1.2}
+footer{text-align:center;color:#c9a9b7;font-size:13px;padding:10px 0 35px}
+@media(max-width:620px){main{padding:12px}.hero{min-height:65vh;padding:35px 8px}section{padding:21px;border-radius:23px}.photos{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}p{font-size:17px}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="heart">❤️</div>
+    <h1>Iwona ❤️ Mateusz</h1>
+    <div class="lead">„Jedna stacja. 220 km. I świat już nie był taki sam.”</div>
+    <div class="date">14.02.2025 ❤️</div>
+    <div class="scroll">NASZA HISTORIA ↓</div>
+  </header>
+
+  <section>
+    <h2>❤️ Od tej chwili wszystko zaczęło mieć znaczenie</h2>
+    <p>Są takie chwile, których nie da się zaplanować ani przewidzieć. Jedna podróż, jedna stacja, <span class="highlight">220 kilometrów</span> i spotkanie dwóch osób, które miało zmienić całe życie.</p>
+    <p>Dla Iwony i Mateusza <span class="highlight">14 lutego 2025 roku</span> nie był po prostu kolejnym dniem. To był początek historii, którą warto pamiętać przez całe życie.</p>
+    <p>Od tamtej chwili zaczęły powstawać wspólne wspomnienia — te wielkie i te zupełnie małe: rozmowy, spojrzenia, uśmiechy, bliskość, wspólne plany i chwile, w których najważniejsze było po prostu być obok siebie.</p>
+    <p>Bo prawdziwa miłość nie zawsze potrzebuje wielkich słów. Czasami wystarczy obecność jednej osoby, przy której serce wie, że jest dokładnie tam, gdzie powinno.</p>
+  </section>
+
+  <section>
+    <h2>💕 Wasza miłość</h2>
+    <p>Iwona i Mateusz — dwa różne światy, które pewnego dnia spotkały się i zaczęły tworzyć jeden. To historia o tym, że odległość nie musi dzielić, droga nie musi być przeszkodą, a przypadkowe spotkanie może stać się najważniejszym spotkaniem w życiu.</p>
+    <p>220 kilometrów przestało być tylko odległością. Stało się symbolem tego, że jeśli naprawdę chce się być przy drugiej osobie, żadna droga nie jest zbyt długa.</p>
+    <div class="quote">„Nie liczy się, ile kilometrów było do przejechania. Liczy się to, do kogo prowadziła ta droga.” ❤️</div>
+  </section>
+
+  <section>
+    <h2>🕊️ Początek, który został na zawsze</h2>
+    <div class="timeline">
+      <div class="point"><b>Jedna stacja.</b><br>Jedno miejsce, w którym los postawił na swojej drodze dwoje ludzi.</div>
+      <div class="point"><b>220 km.</b><br>Droga, która mogła być tylko drogą, a stała się częścią najważniejszej historii.</div>
+      <div class="point"><b>14.02.2025.</b><br>Dzień, od którego słowo „my” zaczęło znaczyć coś zupełnie wyjątkowego.</div>
+      <div class="point"><b>Wspólne życie.</b><br>Codzienność, marzenia, radości, trudniejsze chwile i wszystkie małe momenty, które budują prawdziwą miłość.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>👶 Najpiękniejszy rozdział — Liliana</h2>
+    <p>W pewnym momencie Wasza historia dostała najpiękniejszy możliwy rozdział. Na świecie pojawiła się <span class="highlight">Liliana</span>. ❤️</p>
+    <p>Od tego dnia Wasza miłość zyskała jeszcze jedno, wyjątkowe znaczenie. Z historii dwojga ludzi powstała historia rodziny — z małym sercem, które stało się częścią Waszego wspólnego świata.</p>
+    <p>Liliana jest kolejnym rozdziałem Waszej historii — takim, którego nie da się opisać jednym zdaniem. To codzienne uśmiechy, troska, odpowiedzialność, zmęczenie, radość i chwile, które z czasem stają się najcenniejszymi wspomnieniami.</p>
+    <div class="quote">„Najpiękniejsze rzeczy w życiu nie zawsze da się zaplanować. Czasem po prostu przychodzą i zmieniają wszystko.” ❤️</div>
+  </section>
+
+  <section>
+    <h2>👨‍👩‍👧‍👦 Ważna część Waszej rodziny</h2>
+    <p>Iwona jest także mamą <span class="highlight">trojga innych dzieci</span>. Nie są to dzieci Mateusza, ale są ważną częścią życia Iwony i świata, który ją ukształtował.</p>
+    <p>Każde z nich ma swoje miejsce w tej rodzinnej historii. Miłość nie zawsze oznacza tę samą więź, ale zawsze może oznaczać szacunek, troskę, akceptację i miejsce przy wspólnym stole.</p>
+    <p>Dlatego ta historia jest większa niż historia tylko dwojga ludzi. To opowieść o bliskości, rodzinie, różnych doświadczeniach i o tym, że można razem budować przyszłość, szanując wszystko to, co było wcześniej.</p>
+  </section>
+
+  <section>
+    <h2>❤️ Wasza historia w liczbach</h2>
+    <div class="stats">
+      <div class="stat"><b>220</b>kilometrów</div>
+      <div class="stat"><b>14.02.2025</b>dzień początku</div>
+      <div class="stat"><b>1</b>niezwykłe spotkanie</div>
+      <div class="stat"><b>∞</b>powodów, żeby kochać</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📸 Wasze wspomnienia</h2>
+    <div class="photos">
+      <figure><img src="zdjecie1.jpg" alt="Wspólne zdjęcie Iwony i Mateusza"><figcaption>Jedna z Waszych wspólnych chwil ❤️</figcaption></figure>
+      <figure><img src="zdjecie2.png" alt="Wspólne wspomnienie"><figcaption>Wspomnienia, które zostają na zawsze ❤️</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="center">
+    <h2>🎵 Wasza piosenka</h2>
+    <p>„Kamień z napisem LOVE” ❤️</p>
+    <p class="small">Bo niektóre piosenki po prostu pasują do jednej konkretnej historii.</p>
+    <a class="button" href="https://youtu.be/vBj5P71Mci4" target="_blank" rel="noopener">▶ Posłuchaj piosenki</a>
+  </section>
+
+  <section class="qr">
+    <h2>📱 ❤️ Zeskanuj mnie ❤️</h2>
+    <p>Zeskanuj kod QR telefonem, aby otworzyć tę historię.</p>
+    <img src="kod-qr.png" alt="Kod QR prowadzący do strony Iwony i Mateusza">
+    <p class="small">Iwona ❤️ Mateusz — nasza historia</p>
+  </section>
+
+  <section class="final">
+    <div class="quote">„Czasem całe życie zaczyna się od jednej podróży.”</div>
+    <div class="big">Ty i ja… ❤️<br>Na zawsze. ♾️</div>
+    <p>Niech przed Wami będzie jeszcze mnóstwo kilometrów, wspólnych poranków, wieczorów, śmiechu, wzruszeń i chwil, które kiedyś staną się najpiękniejszymi wspomnieniami.</p>
+    <p><b>Iwona ❤️ Mateusz</b><br>Jedna historia. Jedna rodzina. Jedno „na zawsze”.</p>
+  </section>
+
+  <footer>14.02.2025 ❤️ Z miłością, na zawsze.</footer>
+</main>
+</body>
+</html>
